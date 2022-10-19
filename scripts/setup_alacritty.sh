@@ -63,6 +63,7 @@ setup_alacritty() {
 setup_rust() {
 	echo 'Downloading rustup...'
 	curl --proto '=https' --tlsv1.2 -sSf 'https://sh.rustup.rs' | sh
+	source "$HOME/.cargo/env"
 
 	echo "Ensure we're using the stable compiler"
 	rustup override set stable
