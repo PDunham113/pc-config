@@ -12,7 +12,6 @@ main() {
 	sudo apt update
 	
 	setup_alacritty
-	
 }
 
 setup_alacritty() {
@@ -56,6 +55,10 @@ setup_alacritty() {
 	# Setting as default terminal
 	sudo update-alternatives --install '/usr/bin/x-terminal-emulator' x-terminal-emulator $(which alacritty) 50
 	sudo update-alternatives --config x-terminal-emulator
+
+	# Move our config file
+	mkdir -p "~/.config/alacritty"
+	cp "${SCRIPT_DIR}/../config/alacritty:alacritty.yml" "~/.config/alacritty/alacritty.yml"
 
 	echo 'Installation complete!'
 }
