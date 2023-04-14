@@ -15,7 +15,6 @@ main() {
 setup_pkgs() {
 	sudo apt install \
 		discord \
-		git \
 		htop \
 		iotop \
 		screen \

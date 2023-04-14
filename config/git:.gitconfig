@@ -1,0 +1,11 @@
+[alias]
+    graph = log --all --graph --oneline --color
+[user]
+    name = PDunham113
+    email = patrick.dunham.113@gmail.com
+[core]
+    editor = vim
+[fetch]
+    prune = true
+[pull]
+    ff = only
