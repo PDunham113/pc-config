@@ -1,0 +1,19 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.suggestSmartCommit": false,
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "window.autoDetectColorScheme": false,
+    "sundial.autoLocale": true,
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "editor.rulers": [80, 88, 110],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "security.workspace.trust.untrustedFiles": "open"
+}
