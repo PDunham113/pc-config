@@ -10,6 +10,7 @@ readonly SCRIPT_DIR
 
 main() {
     echo 'Downloading VSCode...'
+    mkdir -p "${VSCODE_TMP}"
     wget "${VSCODE_PKG}" -O "${VSCODE_TMP}/vscode.deb"
     sudo apt install "${VSCODE_TMP}/vscode.deb"
 
