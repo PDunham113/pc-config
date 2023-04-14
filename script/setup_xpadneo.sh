@@ -22,7 +22,10 @@ setup_xpadneo() {
 	cd "${XPADNEO_TMP}"
 
 	echo 'Downloading deps...'
-	sudo apt-get install dkms linux-headers-`uname -r`
+	sudo apt install \
+		dkms \
+		linux-headers-`uname -r` \
+		-y
 
 	echo 'Installing...'
 	sudo ./install.sh
