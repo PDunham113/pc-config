@@ -15,14 +15,12 @@ main() {
     sudo apt install "${VSCODE_TMP}/vscode.deb"
 
     echo 'Installing extensions...'
-	code --install-extension \
-        johnpapa.vscode-peacock \
-        muuvmuuv.vscode-sundial \
-        --force
+	code --install-extension johnpapa.vscode-peacock
+    code --install-extension muuvmuuv.vscode-sundial
 
     echo 'Installing config...'
-    mkdir -p "~/.config/Code"
-    cp "${SCRIPT_DIR}/../config/vscode:settings.json" "~/.config/Code/User/settings.json"
+    mkdir -p "${HOME}/.config/Code/User"
+    cp "${SCRIPT_DIR}/../config/vscode:settings.json" "${HOME}/.config/Code/User/settings.json"
 
     echo 'Installation complete!'
 }

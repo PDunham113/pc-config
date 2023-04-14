@@ -10,7 +10,7 @@ readonly SCRIPT_DIR
 
 main() {
 	sudo apt update
-	
+
 	setup_alacritty
 }
 
@@ -57,8 +57,8 @@ setup_alacritty() {
 	sudo update-alternatives --config x-terminal-emulator
 
 	# Move our config file
-	mkdir -p "~/.config/alacritty"
-	cp "${SCRIPT_DIR}/../config/alacritty:alacritty.yml" "~/.config/alacritty/alacritty.yml"
+	mkdir -p "${HOME}/.config/alacritty"
+	cp "${SCRIPT_DIR}/../config/alacritty:alacritty.yml" "${HOME}/.config/alacritty/alacritty.yml"
 
 	echo 'Installation complete!'
 }

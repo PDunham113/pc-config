@@ -22,6 +22,7 @@ setup_pkgs() {
 		slack-desktop \
 		steam \
 		vim \
+		vim-airline \
 		vlc \
 		-y
 }
