@@ -19,7 +19,6 @@ setup_pkgs() {
 		iotop \
 		screen \
 		slack-desktop \
-		steam \
 		vim \
 		vim-airline \
 		vlc \
