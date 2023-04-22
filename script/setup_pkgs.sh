@@ -17,6 +17,9 @@ setup_pkgs() {
 		discord \
 		htop \
 		iotop \
+		ipython3 \
+		python-is-python3 \
+		python3-pip \
 		screen \
 		slack-desktop \
 		vim \
