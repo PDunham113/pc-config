@@ -1,0 +1,2 @@
+plex -fstype=nfs4 overwatch.local.lan:/mimir/plex
+share -fstype=nfs4 overwatch.local.lan:/mimir/share
