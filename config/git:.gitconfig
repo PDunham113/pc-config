@@ -7,5 +7,8 @@
     editor = vim
 [fetch]
     prune = true
+[merge]
+    ff = no
+    commit = no
 [pull]
     ff = only
