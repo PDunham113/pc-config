@@ -17,6 +17,7 @@ main() {
     echo 'Installing extensions...'
 	code --install-extension johnpapa.vscode-peacock
     code --install-extension muuvmuuv.vscode-sundial
+    code --install-extension timonwong.shellcheck
 
     echo 'Installing config...'
     mkdir -p "${HOME}/.config/Code/User"

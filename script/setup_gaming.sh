@@ -26,10 +26,10 @@ setup_heroic_games_launcher() {
     echo 'Downloading Heroic Games Launcher...'
     curl -s "${GITHUB_API_URL}/${HEROIC_REPO}" | grep 'browser_download_url":.*deb"' \
         | cut -d : -f 2,3 | tr -d \" \
-        | wget -qi - -O '/tmp/heroic.deb'
+        | wget -qi - -O "${GAMING_TMP}/heroic.deb"
 
     echo 'Installing...'
-    sudo apt install '/tmp/heroic.deb'
+    sudo apt install "${GAMING_TMP}/heroic.deb"
 
     echo 'Heroic Games Launcher installed!'
 }
@@ -40,10 +40,10 @@ setup_r2modman() {
     echo 'Downloading r2modman...'
     curl -s "${GITHUB_API_URL}/${R2MODMAN_REPO}" | grep 'browser_download_url":.*deb"' \
         | cut -d : -f 2,3 | tr -d \" \
-        | wget -qi - -O '/tmp/r2modman.deb'
+        | wget -qi - -O "${GAMING_TMP}/r2modman.deb"
 
     echo 'Installing...'
-    sudo apt install '/tmp/r2modman.deb'
+    sudo apt install "${GAMING_TMP}/r2modman.deb"
 
     echo 'r2modman installed!'
 }

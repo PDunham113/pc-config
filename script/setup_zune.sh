@@ -16,9 +16,6 @@ setup_zune() {
 
     echo 'Copying Zune keyfile...'
 	cp "${SCRIPT_DIR}/../config/zune:.mtpz_data" "${HOME}/.mtpz_data"
-
-
-
 }
 
 main "$@"

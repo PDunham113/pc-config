@@ -24,7 +24,7 @@ setup_xpadneo() {
 	echo 'Downloading deps...'
 	sudo apt install \
 		dkms \
-		linux-headers-`uname -r` \
+		"linux-headers-$(uname -r)" \
 		-y
 
 	echo 'Installing...'

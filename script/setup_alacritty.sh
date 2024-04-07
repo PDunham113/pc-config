@@ -53,7 +53,7 @@ setup_alacritty() {
 	#echo 'fpath+=${ZDOTDIR:-~}/.zsh_functions' >> "${ZDOTDIR:-~}/.zshrc"
 	#cp 'extra/completions/_alacritty' "${ZDOTDIR:-~}/.zsh_functions/_alacritty"
 	# Setting as default terminal
-	sudo update-alternatives --install '/usr/bin/x-terminal-emulator' x-terminal-emulator $(which alacritty) 50
+	sudo update-alternatives --install '/usr/bin/x-terminal-emulator' x-terminal-emulator "$(which alacritty)" 50
 	sudo update-alternatives --config x-terminal-emulator
 
 	# Move our config file

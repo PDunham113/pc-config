@@ -9,7 +9,6 @@ main() {
 	sudo apt update
 
 	setup_pkgs
-
 }
 
 setup_pkgs() {
