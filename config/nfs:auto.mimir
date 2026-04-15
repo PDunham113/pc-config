@@ -1,2 +1,2 @@
-plex -fstype=nfs4 overwatch.local.lan:/mimir/plex
-share -fstype=nfs4 overwatch.local.lan:/mimir/share
+plex -fstype=nfs4 megamind.local.lan:/mimir/plex
+share -fstype=nfs4 megamind.local.lan:/mimir/share
