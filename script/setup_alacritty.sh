@@ -58,7 +58,7 @@ setup_alacritty() {
 
 	# Move our config file
 	mkdir -p "${HOME}/.config/alacritty"
-	cp "${SCRIPT_DIR}/../config/alacritty:alacritty.yml" "${HOME}/.config/alacritty/alacritty.yml"
+	cp "${SCRIPT_DIR}/../config/alacritty:alacritty.toml" "${HOME}/.config/alacritty/alacritty.toml"
 
 	echo 'Installation complete!'
 }
